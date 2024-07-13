@@ -1,0 +1,60 @@
+body {
+    background-color: #121212;
+    color: rgb(235, 235, 235);
+    font-family: "Monsterrat Black Italic";
+}
+
+#czr-logo {
+    font-size: 30vw;
+}
+
+#latest-release {
+    font-size: 6vw;
+}
+
+.social-link a {
+    color: inherit;
+    font-size: 8vw;
+}
+
+.social-link a:hover {
+    color: inherit;
+}
+
+a,
+a:hover {
+    transition-duration: 500ms;
+}
+
+a:hover.soundcloud {
+    color: #ff5500;
+}
+
+a:hover.spotify {
+    color: #1DB954;
+}
+
+a:hover.applemusic {
+    background: -webkit-linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a:hover.instagram {
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a:hover.tiktok {
+    color: white;
+    filter: drop-shadow(3px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+}
+
+a:hover.youtube {
+    color: red;
+}
