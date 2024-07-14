@@ -17,13 +17,9 @@ body {
     font-size: 8vw;
 }
 
-.social-link a:hover {
-    color: inherit;
-}
-
 a,
 a:hover {
-    transition-duration: 500ms;
+    transition-duration: 250ms;
 }
 
 a:hover.soundcloud {
