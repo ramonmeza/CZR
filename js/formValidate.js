@@ -44,7 +44,6 @@
         });
 
         const json = await response.json();
-        console.log(json);
 
         if (!response.ok) {
             // display status message to user
@@ -55,7 +54,6 @@
             emailInput.classList.remove('is-valid');
             return;
         }
-
 
         // display status message to user
         message.classList.remove('text-danger');
