@@ -91,19 +91,16 @@
             <div class="row">
                 <div class="col-md-8 text-center">
                     <h4>Join the Email List!</h4>
-                    <form class="form">
+                    <form class="form" id="subscribe-form">
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="Email..." aria-label="Email..."
                                 aria-describedby="subscribe-btn" id="subscriber-email" required>
-                            <button class="btn btn-outline-secondary" type="button" onclick="add_subscriber()"
-                                id="subscribe-btn" id="email-form">Submit</button>
+                            <button class="btn btn-outline-secondary" type="button" id="subscribe-btn"
+                                id="email-form">Submit</button>
                         </div>
-                        <button class="btn" id="unsubscribe-btn" onclick="remove_subscriber()"
-                            type="button">Unsubscribe</button>
+                        <button class="btn" id="unsubscribe-btn" type="button">Unsubscribe</button>
                     </form>
-                    <div class="hidden" id="subscribe-message">
-                        Subscribed!
-                    </div>
+                    <div id="subscribe-message"></div>
                 </div>
                 <div class="col-md-4 text-center">
                     <h4>Book CZR</h4>
@@ -117,7 +114,8 @@
                     <a href="./privacy.html">Privacy Policy</a>
                 </div>
                 <div class="col-6 text-center">
-                    <div id="copyright">&copy; 2024 - 2024 czrmusic.com - All Rights Reserved.</div>
+                    <div id="copyright">&copy; 2024 - 2024 czrmusic.com - All Rights Reserved.
+                    </div>
                 </div>
             </div>
         </footer>
