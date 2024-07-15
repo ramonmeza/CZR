@@ -3,7 +3,8 @@ async function add_subscriber() {
     const resp = await fetch('https://speoovq9o2.execute-api.us-east-1.amazonaws.com/subscribe', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Access-Control-Allow-Origin': 'https://ramonmeza.github.io',
         },
         body: new URLSearchParams({
             'email': email,
@@ -18,7 +19,8 @@ async function remove_subscriber() {
     const resp = await fetch('https://speoovq9o2.execute-api.us-east-1.amazonaws.com/subscribe', {
         method: 'DELETE',
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Access-Control-Allow-Origin': 'https://ramonmeza.github.io',
         },
         body: new URLSearchParams({
             'email': email
