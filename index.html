@@ -91,16 +91,19 @@
             <div class="row">
                 <div class="col-md-8 text-center">
                     <h4>Join the Email List!</h4>
-                    <form class="form needs-validation"
-                        action="https://speoovq9o2.execute-api.us-east-1.amazonaws.com/subscribe" novalidate>
-                        <div class="input-group has-validation">
+                    <form class="form">
+                        <div class="input-group">
                             <input type="email" class="form-control" placeholder="Email..." aria-label="Email..."
                                 aria-describedby="subscribe-btn" id="subscriber-email" required>
-                            <button class="btn btn-outline-secondary" type="submit" id="subscribe-btn" formmethod="POST"
-                                id="email-form">Submit</button>
+                            <button class="btn btn-outline-secondary" type="button" onclick="add_subscriber()"
+                                id="subscribe-btn" id="email-form">Submit</button>
                         </div>
-                        <button class="btn" id="unsubscribe-btn" formmethod="DELETE">Unsubscribe</button>
+                        <button class="btn" id="unsubscribe-btn" onclick="remove_subscriber()"
+                            type="button">Unsubscribe</button>
                     </form>
+                    <div class="hidden" id="subscribe-message">
+                        Subscribed!
+                    </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <h4>Book CZR</h4>
@@ -126,6 +129,7 @@
         crossorigin="anonymous"></script>
     <script src="./js/formValidate.js"></script>
     <script src="./js/copyright.js"></script>
+    <script src="./js/api.js"></script>
 </body>
 
 </html>
