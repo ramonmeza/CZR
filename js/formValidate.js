@@ -39,11 +39,15 @@
             message.classList.remove('text-danger');
             message.classList.add('text-success');
             message.innerHTML = 'Successfully subscribed!';
+            emailInput.classList.add('is-valid');
+            emailInput.classList.remove('is-invalid');
         } else {
             // display status message to user
             message.classList.add('text-danger');
             message.classList.remove('text-success');
             message.innerHTML = 'Failed to subscribe';
+            emailInput.classList.add('is-invalid');
+            emailInput.classList.remove('is-valid');
         }
     }, false);
 
@@ -70,11 +74,15 @@
             message.classList.remove('text-danger');
             message.classList.add('text-success');
             message.innerHTML = 'Successfully unsubscribed';
+            emailInput.classList.add('is-valid');
+            emailInput.classList.remove('is-invalid');
         } else {
             // display status message to user
             message.classList.add('text-danger');
             message.classList.remove('text-success');
             message.innerHTML = 'Failed to unsubscribe. Please contact email listed at the bottom of the <a href="privacy.html">Privacy Policy</a> for assistance.';
+            emailInput.classList.add('is-invalid');
+            emailInput.classList.remove('is-valid');
         }
     }, false);
 })()
