@@ -52,7 +52,8 @@
             return;
         }
 
-        console.log(response.json());
+        const json = await response.json();
+        console.log(json);
 
         // display status message to user
         message.classList.remove('text-danger');
@@ -100,7 +101,8 @@
             return;
         }
 
-        console.log(response.json())
+        const json = await response.json();
+        console.log(json);
 
         // display status message to user
         message.classList.remove('text-danger');
