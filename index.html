@@ -6,14 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+    <title>CZR | Official Website</title>
 
     <!-- styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="./assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="./assets/fonts/Montserrat.css" rel="stylesheet">
+
     <link href="./styles/style.css" rel="stylesheet">
-    <link href="./styles/fonts.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,17 +53,17 @@
             <section>
                 <!-- listen -->
                 <div class="row">
-                    <div class="col-md text-center m-3 social-link">
+                    <div class="col-sm text-center m-3 social-link">
                         <a href="https://www.soundcloud.com/musicbyczr" alt="Soundcloud" class="soundcloud"><i
                                 class="fa-brands fa-soundcloud" target="_blank"></i></a>
                     </div>
 
-                    <div class="col-md text-center m-3 social-link">
+                    <div class="col-sm text-center m-3 social-link">
                         <a href="https://open.spotify.com/artist/66ke1Q7C0lcUXjtDLJx6jY?si=oToppBaqR2mj2ZM-yfjMWg"
                             alt="Spotify" class="spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
                     </div>
 
-                    <div class="col-md text-center m-3 social-link">
+                    <div class="col-sm text-center m-3 social-link">
                         <a href="https://music.apple.com/us/artist/czr/1710974476" alt="Apple Music" class="applemusic"
                             target="_blank"><i class="fa-solid fa-music"></i></a>
                     </div>
@@ -70,15 +71,15 @@
 
                 <!-- socials -->
                 <div class="row">
-                    <div class="col-md text-center m-3 social-link">
+                    <div class="col-sm text-center m-3 social-link">
                         <a href="https://www.instagram.com/musicbyczr/" alt="Instagram" class="instagram"
                             target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <div class="col-md text-center m-3 social-link">
+                    <div class="col-sm text-center m-3 social-link">
                         <a href="https://www.tiktok.com/@czr.music/" alt="TikTok" class="tiktok" target="_blank"><i
                                 class="fa-brands fa-tiktok"></i></a>
                     </div>
-                    <div class="col-md text-center m-3 social-link">
+                    <div class="col-sm text-center m-3 social-link">
                         <a href="https://www.youtube.com/@czrmusic" alt="YouTube" class="youtube" target="_blank"><i
                                 target="_blank" class="fa-brands fa-youtube"></i></a>
                     </div>
@@ -90,12 +91,15 @@
             <div class="row">
                 <div class="col-md-8 text-center">
                     <h4>Join the Email List!</h4>
-                    <form class="form">
-                        <div class="input-group">
+                    <form class="form needs-validation"
+                        action="https://speoovq9o2.execute-api.us-east-1.amazonaws.com/subscribe" novalidate>
+                        <div class="input-group has-validation">
                             <input type="email" class="form-control" placeholder="Email..." aria-label="Email..."
-                                aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+                                aria-describedby="subscribe-btn" id="subscriber-email" required>
+                            <button class="btn btn-outline-secondary" type="submit" id="subscribe-btn" formmethod="POST"
+                                id="email-form">Submit</button>
                         </div>
+                        <button class="btn" id="unsubscribe-btn" formmethod="DELETE">Unsubscribe</button>
                     </form>
                 </div>
                 <div class="col-md-4 text-center">
@@ -104,6 +108,15 @@
                         target="_blank">Click here to book me for a DJ
                         performance.</a>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-center">
+                    <a href="./privacy.html">Privacy Policy</a>
+                </div>
+                <div class="col-6 text-center">
+                    <div id="copyright">&copy; 2024 - 2024 czrmusic.com - All Rights Reserved.</div>
+                </div>
+            </div>
         </footer>
     </div>
 
@@ -111,6 +124,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./js/formValidate.js"></script>
+    <script src="./js/copyright.js"></script>
 </body>
 
 </html>
