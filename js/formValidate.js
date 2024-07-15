@@ -43,23 +43,24 @@
             })
         });
 
+        const json = await response.json();
+        console.log(json);
+
         if (!response.ok) {
             // display status message to user
             message.classList.add('text-danger');
             message.classList.remove('text-success');
-            message.innerHTML = 'Failed to subscribe';
+            message.innerHTML = json;
             emailInput.classList.add('is-invalid');
             emailInput.classList.remove('is-valid');
             return;
         }
 
-        const json = await response.json();
-        console.log(json);
 
         // display status message to user
         message.classList.remove('text-danger');
         message.classList.add('text-success');
-        message.innerHTML = 'Successfully subscribed!';
+        message.innerHTML = json;
         emailInput.classList.add('is-valid');
         emailInput.classList.remove('is-invalid');
     }
