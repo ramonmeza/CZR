@@ -4,26 +4,42 @@ body {
     font-family: "Montserrat";
 }
 
-#czr-logo,
-#czr-logo>a {
+.czr-logo,
+.czr-logo>a {
+    mix-blend-mode: exclusion;
+    user-select: none;
+
     font-size: 30vw;
     font-style: italic;
     font-weight: 900;
     text-decoration: none;
+
     color: inherit;
+    display: block;
+    width: 100%;
 }
 
+
 #latest-release {
+    mix-blend-mode: exclusion;
+    user-select: none;
     font-size: 6vw;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .social-link a {
+    mix-blend-mode: exclusion;
+    user-select: none;
     color: inherit;
     font-size: 8vw;
 }
 
 a,
 a:hover {
+    mix-blend-mode: normal;
+    user-select: none;
     transition-duration: 250ms;
 }
 
@@ -58,4 +74,24 @@ a:hover.tiktok {
 
 a:hover.youtube {
     color: red;
+}
+
+.bg-video {
+    position: fixed;
+    top: 0%;
+    left: -50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+@media (min-width: 720px) {
+    .bg-video {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
 }
